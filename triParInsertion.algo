@@ -7,7 +7,7 @@ BEGIN
     FOR i FROM 1 TO arr.length STEP 1  DO
         elem=arr[i];
         j=i;
-        WHILE (j>0 and arr[j-1]) DO
+        WHILE (j>0 and arr[j-1]>elem) DO
             arr[j]=arr[j-1];
             j=j-1;
         END_WHILE
